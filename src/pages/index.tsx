@@ -1,7 +1,11 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
-const Home: NextPage = () => (
+import { fetchPeople, fetchStarShips } from '~/services/starWarsAPI';
+import Person from '~/types/Person';
+import StarShip from '~/types/StarShip';
+
+const Home: NextPage = ({ people, starShips }: InferGetStaticPropsType<typeof getStaticProps>) => (
     <>
         <Head>
             <title>StarWars Battle It Out</title>
@@ -11,5 +15,17 @@ const Home: NextPage = () => (
         </Head>
     </>
 );
+
+export const getStaticProps: GetStaticProps = async () => {
+    const people: Person[] = await fetchPeople();
+    const starShips: StarShip[] = await fetchStarShips();
+
+    return {
+        props: {
+            people,
+            starShips,
+        },
+    };
+};
 
 export default Home;
