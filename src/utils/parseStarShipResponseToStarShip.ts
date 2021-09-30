@@ -1,8 +1,6 @@
-import StarShip from '~/types/StarShip';
-import StarShipResponse from '~/types/StarShipResponse';
+import { StarShip, StarShipResponse } from '~/types';
 
-import parseStringToConsumables from './parseStringToConsumables';
-import parseStringToNumberOrNumberRange from './parseStringToNumber';
+import { parseStringToConsumables, parseStringToNumberOrNumberRange } from '.';
 
 const parseStarShipResponseToStarShip = (response: StarShipResponse): StarShip[] => {
     const responseStarShips = response.results;

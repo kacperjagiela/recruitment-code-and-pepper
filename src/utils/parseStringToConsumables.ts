@@ -1,4 +1,6 @@
-import Consumables, { ConsumablesKeys } from '~/types/Consumables';
+import { ConsumablesKeys } from 'types/Consumables';
+
+import { Consumables } from '~/types';
 
 const parseStringToConsumables = (consumables: string): Consumables => {
     const splittedString = consumables.split(' ');

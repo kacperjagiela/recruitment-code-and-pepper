@@ -1,7 +1,6 @@
-import Person from '~/types/Person';
-import PersonResponse from '~/types/PersonResponse';
+import { Person, PersonResponse } from '~/types';
 
-import parseStringToNumberOrNumberRange from './parseStringToNumber';
+import parseStringToNumberOrNumberRange from './parseStringToNumberOrNumberRange';
 
 const parsePersonResponseToPerson = (response: PersonResponse): Person[] => {
     const responsePeople = response.results;

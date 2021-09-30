@@ -1,8 +1,5 @@
-import Person from '~/types/Person';
-import PersonResponse from '~/types/PersonResponse';
-import StarShip from '~/types/StarShip';
-import parsePersonResponseToPerson from '~/utils/parsePersonResponseToPerson';
-import parseStarShipResponseToStarShip from '~/utils/parseStarShipResponseToStarShip';
+import { Person, PersonResponse, StarShip } from '~/types';
+import { parsePersonResponseToPerson, parseStarShipResponseToStarShip } from '~/utils';
 
 export const fetchPeople = async (): Promise<Person[]> => {
     try {
@@ -13,8 +10,6 @@ export const fetchPeople = async (): Promise<Person[]> => {
             // TODO: recursive api calling for responseBody.next
 
             const people = parsePersonResponseToPerson(responseBody);
-
-            console.log(people);
 
             return people;
         } else {
@@ -34,7 +29,6 @@ export const fetchStarShips = async (): Promise<StarShip[]> => {
             // TODO: recursive api calling for responseBody.next
 
             const starShips = parseStarShipResponseToStarShip(responseBody);
-            console.log(starShips);
 
             return starShips;
         } else {

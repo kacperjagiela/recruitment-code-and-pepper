@@ -25,11 +25,11 @@
       "~/services/*": [
         "services/*",
       ],
-      "~/types/*": [
-        "types/*",
+      "~/types": [
+        "types/index.ts",
       ],
-      "~/utils/*": [
-        "utils/*",
+      "~/utils": [
+        "utils/index.ts",
       ]
     }
   },

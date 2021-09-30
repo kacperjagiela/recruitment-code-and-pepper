@@ -6,7 +6,9 @@ const parseStringToNumberOrNumberRange = (string: string): number | NumberRange 
 
         return { from: Number(splitedString[0]), to: Number(splitedString[1]) } as NumberRange;
     }
+
     const stringToNumber = Number(string.replace(',', ''));
+
     if (!Number.isNaN(stringToNumber)) {
         return stringToNumber;
     }

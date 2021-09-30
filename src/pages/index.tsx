@@ -1,9 +1,9 @@
 import type { GetStaticProps, InferGetStaticPropsType, NextPage } from 'next';
 import Head from 'next/head';
 
+import { MainPage } from '~/components/organisms';
 import { fetchPeople, fetchStarShips } from '~/services/starWarsAPI';
-import Person from '~/types/Person';
-import StarShip from '~/types/StarShip';
+import { Person, StarShip } from '~/types';
 
 const Home: NextPage = ({ people, starShips }: InferGetStaticPropsType<typeof getStaticProps>) => (
     <>
@@ -13,6 +13,7 @@ const Home: NextPage = ({ people, starShips }: InferGetStaticPropsType<typeof ge
             <link rel="icon" href="/favicon.ico" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         </Head>
+        <MainPage />
     </>
 );
 
