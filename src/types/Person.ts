@@ -10,4 +10,15 @@ type Person = {
     homeworld: string;
 };
 
+export type PersonKeys =
+    | 'name'
+    | 'height'
+    | 'mass'
+    | 'hair_color'
+    | 'skin_color'
+    | 'eye_color'
+    | 'birth_year'
+    | 'gender'
+    | 'homeworld';
+
 export default Person;

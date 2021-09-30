@@ -1,10 +1,8 @@
-import NumberRange from 'types/NumberRange';
-
-const parseStringToNumberOrNumberRange = (string: string): number | NumberRange | null => {
+const parseStringToNumberOrNumberRange = (string: string): number => {
     if (string.includes('-')) {
         const splitedString = string.split('-');
 
-        return { from: Number(splitedString[0]), to: Number(splitedString[1]) } as NumberRange;
+        return Number(splitedString[1]);
     }
 
     const stringToNumber = Number(string.replace(',', ''));
@@ -12,7 +10,7 @@ const parseStringToNumberOrNumberRange = (string: string): number | NumberRange 
     if (!Number.isNaN(stringToNumber)) {
         return stringToNumber;
     }
-    return null;
+    return 0;
 };
 
 export default parseStringToNumberOrNumberRange;

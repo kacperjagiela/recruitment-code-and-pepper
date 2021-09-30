@@ -46,6 +46,7 @@ const MainPage: React.FC<Props> = ({ people, starShips }: Props) => {
             />
             {currentFighters.length > 0 && (
                 <Battlefront
+                    currentAttribute={currentAttribute}
                     currentBattleType={currentBattleType}
                     firstDuelist={currentFighters[0]}
                     secondDuelist={currentFighters[1]}

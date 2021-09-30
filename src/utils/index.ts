@@ -3,3 +3,4 @@ export { default as parseStarShipResponseToStarShip } from './parseStarShipRespo
 export { default as parseStringToConsumables } from './parseStringToConsumables';
 export { default as parseStringToNumberOrNumberRange } from './parseStringToNumberOrNumberRange';
 export { default as getRandomPersonOrStarShipFromArray } from './getRandomPersonOrStarShipFromArray';
+export { default as compareStarShipsByConsumables } from './compareStarShipsByConsumables';

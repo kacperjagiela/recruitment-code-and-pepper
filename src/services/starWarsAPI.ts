@@ -7,7 +7,6 @@ export const fetchPeople = async (): Promise<Person[]> => {
 
         if (response.status === 200) {
             const responseBody = (await response.json()) as PersonResponse;
-            // TODO: recursive api calling for responseBody.next
 
             const people = parsePersonResponseToPerson(responseBody);
 
@@ -26,7 +25,6 @@ export const fetchStarShips = async (): Promise<StarShip[]> => {
 
         if (response.status === 200) {
             const responseBody = await response.json();
-            // TODO: recursive api calling for responseBody.next
 
             const starShips = parseStarShipResponseToStarShip(responseBody);
 

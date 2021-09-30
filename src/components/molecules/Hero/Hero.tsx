@@ -23,12 +23,12 @@ const Hero: React.FC<Props> = ({
     currentAttribute,
 }: Props) => (
     <Box>
-        <Typography variant="h2" component="h2" sx={{ textAlign: 'center' }}>
+        <Typography variant="h3" component="h3" sx={{ textAlign: 'center', my: 2 }}>
             Battle it out! <br />
             (Star Wars edition)
         </Typography>
-        <TypeSelect options={['people', 'starships']} label="Battle type" onChange={onBattleTypeChange} />
-        {currentBattleType === 'people' && (
+        <TypeSelect options={['person', 'starships']} label="Battle type" onChange={onBattleTypeChange} />
+        {currentBattleType === 'person' && (
             <TypeSelect options={peopleAttributes} label="Choose attribute" onChange={onAttributeChange} />
         )}
         {currentBattleType === 'starships' && (

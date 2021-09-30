@@ -1,17 +1,38 @@
 import { Card, CardContent, Typography } from '@mui/material';
+import { PersonKeys } from 'types/Person';
+import { StarShipKeys } from 'types/StarShip';
 
 import { Person, StarShip } from '~/types';
 
 interface Props {
-    person?: Person;
-    starShip?: StarShip;
+    fighter: Person | StarShip;
     shouldWin: boolean;
+    currentAttribute: string;
 }
 
-const FighterCard: React.FC<Props> = ({ person, starShip, shouldWin }: Props) => (
-    <Card>
+const FighterCard: React.FC<Props> = ({ fighter, shouldWin, currentAttribute }: Props) => (
+    <Card sx={{ border: 2, borderColor: shouldWin ? 'success.main' : 'error.main' }}>
         <CardContent>
-            <Typography gutterBottom>{person?.name || starShip?.name}</Typography>
+            {Object.keys(fighter).map((key) => {
+                if (key !== 'consumables') {
+                    return (
+                        <>
+                            <Typography
+                                sx={{
+                                    textAlign: 'left',
+                                    textDecoration: currentAttribute === key ? 'underline' : 'none',
+                                }}
+                                key={`${key}_${fighter.name}`}
+                            >
+                                <Typography sx={{ textTransform: 'capitalize' }} component="span">
+                                    {key.replace(/_/g, ' ')}:
+                                </Typography>{' '}
+                                <b>{fighter[key as PersonKeys & StarShipKeys]}</b>
+                            </Typography>
+                        </>
+                    );
+                }
+            })}
         </CardContent>
     </Card>
 );
