@@ -10,6 +10,7 @@ interface Props {
     onAttributeChange: (attribute: string) => void;
     onFightClick: () => void;
     currentBattleType: string;
+    currentAttribute: string;
 }
 
 const Hero: React.FC<Props> = ({
@@ -19,6 +20,7 @@ const Hero: React.FC<Props> = ({
     onBattleTypeChange,
     onAttributeChange,
     onFightClick,
+    currentAttribute,
 }: Props) => (
     <Box>
         <Typography variant="h2" component="h2" sx={{ textAlign: 'center' }}>
@@ -34,7 +36,12 @@ const Hero: React.FC<Props> = ({
         )}
 
         <Box sx={{ width: '100%', display: 'flex', flexDirection: 'row-reverse' }}>
-            <Button variant="contained" sx={{ textAlign: 'right' }} onClick={onFightClick}>
+            <Button
+                disabled={currentAttribute.length === 0}
+                variant="contained"
+                sx={{ textAlign: 'right' }}
+                onClick={onFightClick}
+            >
                 Random fight!
             </Button>
         </Box>

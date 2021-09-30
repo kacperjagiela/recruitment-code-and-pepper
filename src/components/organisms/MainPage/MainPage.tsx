@@ -1,6 +1,6 @@
 import { Box } from '@mui/system';
 
-import { Hero } from '~/components/molecules';
+import { Battlefront, Footer, Hero } from '~/components/molecules';
 import { Person, StarShip } from '~/types';
 
 import useMainPage from './useMainPage';
@@ -19,7 +19,8 @@ const MainPage: React.FC<Props> = ({ people, starShips }: Props) => {
         peopleAttributes,
         starShipsAttributes,
         onFightClick,
-    } = useMainPage();
+        currentFighters,
+    } = useMainPage(people, starShips);
 
     return (
         <Box
@@ -28,7 +29,10 @@ const MainPage: React.FC<Props> = ({ people, starShips }: Props) => {
                 minWidth: '100vw',
                 minHeight: '100vh',
                 overflowX: 'hidden',
-                bgcolor: 'background.paper',
+                bgcolor: 'background.default',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
             }}
         >
             <Hero
@@ -36,9 +40,18 @@ const MainPage: React.FC<Props> = ({ people, starShips }: Props) => {
                 peopleAttributes={peopleAttributes}
                 starShipsAttributes={starShipsAttributes}
                 currentBattleType={currentBattleType}
+                currentAttribute={currentAttribute}
                 onBattleTypeChange={onBattleTypeChange}
                 onAttributeChange={onAttributeChange}
             />
+            {currentFighters.length > 0 && (
+                <Battlefront
+                    currentBattleType={currentBattleType}
+                    firstDuelist={currentFighters[0]}
+                    secondDuelist={currentFighters[1]}
+                />
+            )}
+            <Footer />
         </Box>
     );
 };

@@ -5,7 +5,7 @@ import type { AppProps } from 'next/app';
 
 import '../../styles/globals.css';
 
-const theme = createTheme({ palette: { background: { paper: '#DCEDFF' } } });
+const theme = createTheme({ palette: { background: { default: '#DCEDFF' } } });
 
 const App = ({ Component, pageProps }: AppProps): ReactElement<any, any> => {
     return (

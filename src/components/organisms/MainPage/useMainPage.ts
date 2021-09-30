@@ -1,4 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+
+import { Person, StarShip } from '~/types';
+import { getRandomPersonOrStarShipFromArray } from '~/utils';
 
 interface UseMainPage {
     peopleAttributes: string[];
@@ -8,11 +11,13 @@ interface UseMainPage {
     currentAttribute: string;
     onAttributeChange: (attribute: string) => void;
     onFightClick: () => void;
+    currentFighters: Person[] | StarShip[];
 }
 
-const useMainPage = (): UseMainPage => {
+const useMainPage = (people: Person[], starShips: StarShip[]): UseMainPage => {
     const [currentBattleType, setCurrentBattleType] = useState('');
     const [currentAttribute, setCurrentAttribute] = useState('');
+    const [currentFighters, setCurrentFighters] = useState([] as Person[] | StarShip[]);
 
     const peopleAttributes = ['height', 'mass'];
     const starShipsAttributes = [
@@ -27,8 +32,12 @@ const useMainPage = (): UseMainPage => {
         'MGLT',
     ];
 
+    useEffect(() => {
+        setCurrentAttribute('');
+        setCurrentFighters([]);
+    }, [currentBattleType]);
+
     const onAttributeChange = (attribute: string) => {
-        console.log(attribute);
         setCurrentAttribute(attribute);
     };
 
@@ -37,7 +46,19 @@ const useMainPage = (): UseMainPage => {
     };
 
     const onFightClick = () => {
-        console.log('fight');
+        if (currentAttribute) {
+            if (currentBattleType === 'person') {
+                setCurrentFighters([
+                    getRandomPersonOrStarShipFromArray(people),
+                    getRandomPersonOrStarShipFromArray(people),
+                ] as Person[]);
+            } else {
+                setCurrentFighters([
+                    getRandomPersonOrStarShipFromArray(starShips),
+                    getRandomPersonOrStarShipFromArray(starShips),
+                ] as StarShip[]);
+            }
+        }
     };
 
     return {
@@ -48,6 +69,7 @@ const useMainPage = (): UseMainPage => {
         currentAttribute,
         onAttributeChange,
         onFightClick,
+        currentFighters,
     };
 };
 
