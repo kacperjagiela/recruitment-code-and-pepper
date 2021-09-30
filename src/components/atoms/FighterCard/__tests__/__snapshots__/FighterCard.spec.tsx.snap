@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<FighterCard /> renders correctly 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-1h4pobq-MuiPaper-root-MuiCard-root"
+  >
+    <div
+      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          name
+          :
+        </span>
+         
+        <b>
+          C-3PO
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          height
+          :
+        </span>
+         
+        <b>
+          167
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1sablf2-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          mass
+          :
+        </span>
+         
+        <b>
+          75
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          hair color
+          :
+        </span>
+         
+        <b>
+          n/a
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          skin color
+          :
+        </span>
+         
+        <b>
+          gold
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          eye color
+          :
+        </span>
+         
+        <b>
+          yellow
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          birth year
+          :
+        </span>
+         
+        <b>
+          112BBY
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          gender
+          :
+        </span>
+         
+        <b>
+          n/a
+        </b>
+      </p>
+    </div>
+  </div>
+</div>
+`;

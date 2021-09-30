@@ -7,7 +7,6 @@ type Person = {
     eye_color: string;
     birth_year: string;
     gender: string;
-    homeworld: string;
 };
 
 export type PersonKeys =
@@ -18,7 +17,6 @@ export type PersonKeys =
     | 'skin_color'
     | 'eye_color'
     | 'birth_year'
-    | 'gender'
-    | 'homeworld';
+    | 'gender';
 
 export default Person;

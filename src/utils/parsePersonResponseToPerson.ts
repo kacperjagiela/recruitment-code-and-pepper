@@ -12,7 +12,6 @@ const parsePersonResponseToPerson = (response: PersonResponse): Person[] => {
         eye_color: responsePerson.eye_color,
         birth_year: responsePerson.birth_year,
         gender: responsePerson.gender,
-        homeworld: responsePerson.homeworld,
         height: parseStringToNumberOrNumberRange(responsePerson.height) as number,
         mass: parseStringToNumberOrNumberRange(responsePerson.mass) as number,
     }));

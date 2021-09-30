@@ -27,7 +27,24 @@ const FighterCard: React.FC<Props> = ({ fighter, shouldWin, currentAttribute }: 
                                 <Typography sx={{ textTransform: 'capitalize' }} component="span">
                                     {key.replace(/_/g, ' ')}:
                                 </Typography>{' '}
-                                <b>{fighter[key as PersonKeys & StarShipKeys]}</b>
+                                <b>{`${fighter[key as PersonKeys & StarShipKeys]}`}</b>
+                            </Typography>
+                        </>
+                    );
+                } else {
+                    return (
+                        <>
+                            <Typography
+                                sx={{
+                                    textAlign: 'left',
+                                    textDecoration: currentAttribute === key ? 'underline' : 'none',
+                                }}
+                                key={`${key}_${fighter.name}`}
+                            >
+                                <Typography sx={{ textTransform: 'capitalize' }} component="span">
+                                    {key.replace(/_/g, ' ')}:
+                                </Typography>{' '}
+                                <b>{(fighter as StarShip).consumables.fullString}</b>
                             </Typography>
                         </>
                     );

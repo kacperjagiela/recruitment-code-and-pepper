@@ -8,14 +8,19 @@ const compareStarShipsByConsumables = (firstStarShip: StarShip, secondStarShip: 
 
     const keys = Object.keys(firstConsumables).reverse();
 
+    let finalStarShip = {} as StarShip;
+
     keys.forEach((key) => {
-        if (firstConsumables[key as ConsumablesKeys] > secondConsumables[key as ConsumablesKeys]) {
-            return firstStarShip;
-        } else if (firstConsumables[key as ConsumablesKeys] < secondConsumables[key as ConsumablesKeys]) {
-            return secondStarShip;
+        if (key !== 'fullString' && !finalStarShip.name) {
+            if (firstConsumables[key as ConsumablesKeys] > secondConsumables[key as ConsumablesKeys]) {
+                finalStarShip = firstStarShip;
+            } else if (firstConsumables[key as ConsumablesKeys] < secondConsumables[key as ConsumablesKeys]) {
+                finalStarShip = secondStarShip;
+            }
         }
     });
-    return null;
+
+    return finalStarShip;
 };
 
 export default compareStarShipsByConsumables;
