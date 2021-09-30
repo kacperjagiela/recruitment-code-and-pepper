@@ -10,10 +10,11 @@ const Home: NextPage = ({ people, starShips }: InferGetStaticPropsType<typeof ge
         <Head>
             <title>StarWars Battle It Out</title>
             <meta name="description" content="Developed by Kacper Jagieła" />
+            <meta name="viewport" content="initial-scale=1, width=device-width" />
             <link rel="icon" href="/favicon.ico" />
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
         </Head>
-        <MainPage />
+        <MainPage people={people} starShips={starShips} />
     </>
 );
 
