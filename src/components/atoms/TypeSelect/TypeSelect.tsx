@@ -8,10 +8,10 @@ interface Props {
 
 const TypeSelect: React.FC<Props> = ({ options, onChange, label }: Props) => (
     <FormControl fullWidth sx={{ my: 2 }}>
-        <InputLabel id={`select_input_${label}`}>{label}</InputLabel>
+        <InputLabel id={`select_input_${label.replace(/ /g, '_')}`}>{label}</InputLabel>
         <Select
             sx={{ textTransform: 'capitalize' }}
-            labelId={`select_input_${label}`}
+            labelId={`select_input_${label.replace(/ /g, '_')}`}
             label={label}
             id={`select_${label}`}
             onChange={(e) => onChange(e.target.value as string)}

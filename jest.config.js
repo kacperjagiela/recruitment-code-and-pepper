@@ -8,10 +8,11 @@ module.exports = {
         '~/components/atoms': '<rootDir>/src/components/atoms/index.ts',
         '~/components/molecules': '<rootDir>/src/components/molecules/index.ts',
         '~/components/organisms': '<rootDir>/src/components/organisms/index.ts',
-        '~/mocks': '<rootDir>/src/mocks/index.ts',
+        '~/mocks/([^\\.]*)$': '<rootDir>/src/mocks/$1',
         '~/services/([^\\.]*)$': '<rootDir>/src/services/$1',
         '~/utils': '<rootDir>/src/utils/index.ts',
     },
+    setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
     transform: {
         '^.+\\.(ts|tsx)$': 'babel-jest',
     },

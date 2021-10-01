@@ -11,4 +11,15 @@ const personMock = {
     gender: 'n/a',
 } as Person;
 
+export const secondPersonMock = {
+    name: 'C-3PO1',
+    height: 167,
+    mass: 76,
+    hair_color: 'n/a',
+    skin_color: 'gold',
+    eye_color: 'yellow',
+    birth_year: '112BBY',
+    gender: 'n/a',
+} as Person;
+
 export default personMock;

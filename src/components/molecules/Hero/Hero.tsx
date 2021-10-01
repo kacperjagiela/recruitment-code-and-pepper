@@ -29,10 +29,10 @@ const Hero: React.FC<Props> = ({
         </Typography>
         <TypeSelect options={['person', 'starships']} label="Battle type" onChange={onBattleTypeChange} />
         {currentBattleType === 'person' && (
-            <TypeSelect options={peopleAttributes} label="Choose attribute" onChange={onAttributeChange} />
+            <TypeSelect options={peopleAttributes} label="Choose person attribute" onChange={onAttributeChange} />
         )}
         {currentBattleType === 'starships' && (
-            <TypeSelect options={starShipsAttributes} label="Choose attribute" onChange={onAttributeChange} />
+            <TypeSelect options={starShipsAttributes} label="Choose starship attribute" onChange={onAttributeChange} />
         )}
 
         <Box sx={{ width: '100%', display: 'flex', flexDirection: 'row-reverse' }}>

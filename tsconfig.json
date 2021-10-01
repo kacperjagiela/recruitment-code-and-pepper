@@ -22,8 +22,8 @@
       "~/components/*": [
         "components/*"
       ],
-      "~/mocks": [
-        "mocks/index.ts",
+      "~/mocks/*": [
+        "mocks/*",
       ],
       "~/services/*": [
         "services/*",
@@ -34,12 +34,16 @@
       "~/utils": [
         "utils/index.ts",
       ]
-    }
+    },
+    "types": [
+      "@types/jest",
+      "@testing-library/jest-dom"
+    ]
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
   ],
   "exclude": [
     "node_modules"

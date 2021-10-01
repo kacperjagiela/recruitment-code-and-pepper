@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders correctly 1`] = `
+<div>
+  <div
+    class="MuiBox-root css-15z5ch3"
+  >
+    <p
+      class="MuiTypography-root MuiTypography-body1 css-1uwgr7b-MuiTypography-root"
+    >
+      Developed by
+       
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1kgfegd-MuiTypography-root-MuiLink-root"
+        href="https://github.com/kacperjagiela"
+      >
+        Kacper Jagieła
+      </a>
+       
+      for
+       
+      <a
+        class="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineAlways css-1kgfegd-MuiTypography-root-MuiLink-root"
+        href="https://codeandpepper.com/"
+      >
+        Code & Pepper
+      </a>
+    </p>
+  </div>
+</div>
+`;

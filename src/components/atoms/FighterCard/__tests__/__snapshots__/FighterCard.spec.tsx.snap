@@ -14,8 +14,7 @@ exports[`<FighterCard /> renders correctly 1`] = `
         <span
           class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
         >
-          name
-          :
+          name:
         </span>
          
         <b>
@@ -28,8 +27,7 @@ exports[`<FighterCard /> renders correctly 1`] = `
         <span
           class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
         >
-          height
-          :
+          height:
         </span>
          
         <b>
@@ -42,8 +40,7 @@ exports[`<FighterCard /> renders correctly 1`] = `
         <span
           class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
         >
-          mass
-          :
+          mass:
         </span>
          
         <b>
@@ -56,8 +53,7 @@ exports[`<FighterCard /> renders correctly 1`] = `
         <span
           class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
         >
-          hair color
-          :
+          hair color:
         </span>
          
         <b>
@@ -70,8 +66,7 @@ exports[`<FighterCard /> renders correctly 1`] = `
         <span
           class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
         >
-          skin color
-          :
+          skin color:
         </span>
          
         <b>
@@ -84,8 +79,7 @@ exports[`<FighterCard /> renders correctly 1`] = `
         <span
           class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
         >
-          eye color
-          :
+          eye color:
         </span>
          
         <b>
@@ -98,8 +92,7 @@ exports[`<FighterCard /> renders correctly 1`] = `
         <span
           class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
         >
-          birth year
-          :
+          birth year:
         </span>
          
         <b>
@@ -112,12 +105,180 @@ exports[`<FighterCard /> renders correctly 1`] = `
         <span
           class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
         >
-          gender
-          :
+          gender:
         </span>
          
         <b>
           n/a
+        </b>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<FighterCard /> renders correctly for starship 1`] = `
+<div>
+  <div
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-toqqfd-MuiPaper-root-MuiCard-root"
+  >
+    <div
+      class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+    >
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          name:
+        </span>
+         
+        <b>
+          CR90 corvette
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          model:
+        </span>
+         
+        <b>
+          CR90 corvette
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          manufacturer:
+        </span>
+         
+        <b>
+          Corellian Engineering Corporation
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          cost in credits:
+        </span>
+         
+        <b>
+          3500000
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          length:
+        </span>
+         
+        <b>
+          150
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          max atmosphering speed:
+        </span>
+         
+        <b>
+          950
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          crew:
+        </span>
+         
+        <b>
+          30
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          passengers:
+        </span>
+         
+        <b>
+          600
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          cargo capacity:
+        </span>
+         
+        <b>
+          3000000
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1sablf2-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          consumables:
+        </span>
+         
+        <b>
+          1 year
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          hyperdrive rating:
+        </span>
+         
+        <b>
+          2
+        </b>
+      </p>
+      <p
+        class="MuiTypography-root MuiTypography-body1 css-1269381-MuiTypography-root"
+      >
+        <span
+          class="MuiTypography-root MuiTypography-body1 css-1dzd4o2-MuiTypography-root"
+        >
+          MGLT:
+        </span>
+         
+        <b>
+          60
         </b>
       </p>
     </div>
